@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        #clickBtn {
+            width: 10em;
+            height: 5em;
+            color: green;
+            background-color: cyan;
+            border-width: 0;
+        }
+        em {
+            background-color: black;
+            color: fuchsia;
+        }
+        body {
+            background-color: aliceblue;
+        }
+        .jedi {
+            /* width: 10em; */
+            float: left; 
+            margin: .5em;
+            margin-right: 3em;
+        }
+        .quote {
+            color: darkgoldenrod;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    <p>Wise and dedicated Jedi Master with over 800 years of leadership, combat strategy, and mentorship experience. Skilled in advanced Force techniques, conflict resolution, and training the next generation of Jedi Knights. Proven ability to maintain peace across the galaxy while adapting to rapidly changing political landscapes. Known for calm decision-making, strong moral values, and a unique communication style that inspires others to look inward for growth. Seeking opportunities to continue guiding future heroes and restoring balance wherever needed.</p>
+    <img class="jedi" src="yoda.webp"/>
+    <h2>Passtime</h2>
+    <ul>
+        <li>Training Jedi Padawans and Knights</li>
+        <li>Meditating to strengthen his connection to the Force</li>
+        <li>Offering wisdom and guidance to the Jedi Council</li>
+        <li>Defending the galaxy using advanced lightsaber combat</li>
+        <li>Lifting heavy objects effortlessly (and sometimes spaceships)</li>
+        <li>Mastering stealth and unexpected agility despite his size</li>
+        <li>Exploring deep philosophical questions about balance and destiny</li>
+        <li>Maintaining peace through diplomacy and negotiation</li>
+        <li>Surviving in remote and challenging environments</li>
+        <li>Speaking in cryptic yet inspiring life lessons</li>
+        <li>Riding on the backs of young Jedi during training sessions</li>
+        <li>Enjoying quiet reflection in swampy homes</li>
+    </ul>
+    <hr>
+    <div style="text-align: center;">
+        <h2>Training</h2>
+        <p style="text-align: left;">
+            I am always training and pondering about how to make the world better.
+            Enjoy the sweet sounds of practice.
+            You can support me by giving me encouragement by clicking the "Practice" button!
+        </p>
+        <h4>Training Swings: <span id="count">0</span></h4>
+        <button id="clickBtn">Practice</button>
+        <audio id="clickSound" src="mixkit-typewriter-soft-click-1125.wav"></audio>
+        
+        <script>
+            let count = 0;
+            
+            const countDisplay = document.getElementById("count");
+            const button = document.getElementById("clickBtn");
+            const clickSound = document.getElementById("clickSound");
+            
+            button.addEventListener("click", function() {
+                count++;
+                countDisplay.textContent = count;
+
+                clickSound.currentTime = 0;
+                clickSound.play();
+        });
+        </script>
+    </div>
+    <hr>
+    <div>
+        <h2>Wise Words</h2>
+        <p class="quote">“No! Try not. Do. Or do not. There is no try.”</p>
+        <p class="quote">“You must unlearn what you have learned.”</p>
+        <p class="quote">“Train yourself to let go of everything you are afraid to lose.”</p>
+        <p class="quote">“In a dark place we find ourselves, and a little more knowledge lights our way.”</p>
+        <p class="quote">"Delicate flower truth is, but also the most precious treasure in life - because liberation it brings, freedom it brings."</p>
+    </div>
+</body>
+</html>
