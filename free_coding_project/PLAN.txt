@@ -1,0 +1,40 @@
+"""I need to take arguments from a command line
+Then, divide up the argument based on flags given
+Locate and check that the correct amount of args was given
+Perform the task"""
+"""Tasks that I want to perform:
+- (1)Intro page when run
+    - Simple text display
+    - Auto-run on application open
+- (2)Create a file on the desktop
+    - Arguments: flag, file_name
+    - Make file using file_name
+    - Move file to desktop
+    - Write a message in the file
+- (3)Change password settings
+    - Arguments: flag, (choose setting, desired value)
+    - Takes the flag and outputs a list of possible password settings
+    - Gives chance for user to choose the setting(s)
+    - Check that correct format was used(setting_name num)
+    - Change setting(s)
+- (4)Create a text file and open the file with inputed message
+    - Arguments: flag, file_name, file_path, display_message
+    - Creates a file with file_name at file_path
+    - Writes in the file the message
+- (5)Return a report of all users on a system
+    - Arguments: flag
+    - Access list of users
+    - Print users
+- (6)List of processes running
+    - Arguments: flag, num_of_processes
+    - Locate processes using Resource Monitor
+    - Get process information
+    - Display a list up to num_of_processes
+- (7)Help Page
+    - Arguments: flag, second flag
+    - Print a help for all possible flags
+    - If second flag provided, list specific arguments for that flag
+"""
+"""Have one file be the file that is run with the introduction and is what takes the initial input
+    Have a second file that takes the information given by intro file and runs the functions
+"""
