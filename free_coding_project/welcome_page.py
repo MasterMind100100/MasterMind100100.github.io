@@ -5,7 +5,7 @@ import sys
 
 test = True
 if test:
-    args = ['welcom_page.py', '-u']
+    args = ['-pwd', 0]
 else:
     args = sys.argv[1:]
 
@@ -27,7 +27,7 @@ def main():
     checker = system_flags.valid_argument(args)
 
     if checker:
-        system_flags.process(checker, args)
+        system_flags.process(checker, args[1:])
     else:
         print("Invalid Argument")
 

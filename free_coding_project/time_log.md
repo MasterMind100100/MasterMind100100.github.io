@@ -1,4 +1,4 @@
-## TOTAL TIME: 02:45:00
+## TOTAL TIME: 05:30:00
 
 **DATE**: 10/29/2025
 **START**: 8:30am
@@ -20,6 +20,12 @@
 
 **DATE**: 11/21/2025
 **START**: 9:40am
-**END**: 00:00am
-**DURRATION**: 00:00:00
-**CONTENTS**: 
+**END**: 10:50am
+**DURRATION**: 01:10:00
+**CONTENTS**: Worked on accessing the users in Windows and Linux systems. Also researched how to do that with python
+
+**DATE**: 11/24/2025
+**START**: 5:20pm
+**END**: 6:55pm
+**DURRATION**: 01:35:00
+**CONTENTS**: Implemented the random password and the text file creator
